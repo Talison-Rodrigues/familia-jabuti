@@ -14,6 +14,7 @@
   --gray-02: hsl(0, 0%, 96%);
 
   /* SPACE SIZES */
+
   --size-00: 0.25rem;
   --size-01: 0.5rem;
   --size-02: 1rem;
@@ -97,7 +98,7 @@ a {
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 75%;
+  background-position: 50% center;
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
@@ -195,6 +196,8 @@ a {
     border-radius: 2px;
   }
 }
+
+/* FOOTER -- Not semantic */
 
 .footer {
   scroll-snap-align: start;
