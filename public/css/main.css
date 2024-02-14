@@ -144,7 +144,7 @@ a {
 /* Imagens de fundo das sections */
 
 .intro-section {
-  background-image: url('../img/img-02.jpg');
+  background-image: url('../img/img-02.webp');
 }
 
 .bella-section {
@@ -208,7 +208,6 @@ a {
     margin: auto;
     padding: var(--size-08);
     display: flex;
-    flex-wrap: wrap;
     gap: 1rem;
     justify-content: space-between;
     align-items: center;
@@ -275,6 +274,8 @@ a {
 
   .footer .footer-content-container {
     padding: var(--size-02);
+    flex-direction: column;
+    text-align: center;
   }
 
 }
