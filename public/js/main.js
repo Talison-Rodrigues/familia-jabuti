@@ -29,7 +29,7 @@ function typeWriter() {
   let titleTimeout = setTimeout(function typeStarter() {
     newText += text[j]
     titles[0].textContent = newText;
-    titleTimeout = setTimeout(typeStarter, 75)
+    titleTimeout = setTimeout(typeStarter, 100)
     j++
     if (typeof text[j] === 'undefined') {
       clearTimeout(titleTimeout)
