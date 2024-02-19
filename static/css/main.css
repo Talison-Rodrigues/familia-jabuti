@@ -151,7 +151,7 @@ a {
 /* Imagens de fundo das sections */
 
 .intro-section {
-  background-image: url("../img/img-02.webp");
+  background-image: url("/static/img/img-02.webp");
 }
 
 .bella-section {
