@@ -1,5 +1,7 @@
 const titles = document.querySelectorAll('.banner-title-js'),
-      cards = document.querySelectorAll('.all-attrs');
+      cards = document.querySelectorAll('.all-attrs'),
+      menu = document.querySelector('.menu'),
+      menuBtn = document.querySelector('.menu-button');
 
 // API IntersectionObserver, observa os elementos alvos e faz algo, no caso, faz
 // um transform/translateY
@@ -20,6 +22,17 @@ titles.forEach((title) => {
   observer.observe(title)
 })
 
+menuBtn.addEventListener('click', () => {
+  if (!menu.classList.contains('active')) {
+    menu.classList.add('active');
+    menuBtn.classList.add('button-active')
+  }
+  else {
+    menu.classList.remove('active')
+    menuBtn.classList.remove('button-active');
+  }
+})
+
 // Efeito de máquina de escrever
 function typeWriter() {
   const text = titles[0].textContent
@@ -29,12 +42,12 @@ function typeWriter() {
   let titleTimeout = setTimeout(function typeStarter() {
     newText += text[j]
     titles[0].textContent = newText;
-    titleTimeout = setTimeout(typeStarter, 100)
+    titleTimeout = setTimeout(typeStarter, 125)
     j++
     if (typeof text[j] === 'undefined') {
       clearTimeout(titleTimeout)
     }
-  }, 100)
+  }, 0)
   
 }
 

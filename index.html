@@ -7,13 +7,19 @@
       name="description"
       content="Site criado para divulgar os belos Jabutis e Tartarugas."
     />
+    <link rel="shortcut icon" href="static/img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="static/css/main.css" />
     <title>Jabutis e Tartarugas</title>
   </head>
   <body>
     <header class="header">
       <nav class="nav">
-        <h1 class="logo"><a href="index.html">Família Jabuti</a></h1>
+        <h1 class="logo-wrapper">
+          <a href="index.html" class="desktop-logo">Família Jabuti</a>
+          <a href="index.html" class="mobile-logo">
+            <img src="static/img/logo-black.svg" alt="Familía Jabuti logo">
+          </a>
+        </h1>
         <ul class="menu">
           <li class="menu-item"><a href="#bella" class="link-js">Bella</a></li>
           <li class="menu-item">
@@ -23,13 +29,14 @@
             <a href="#vicoso" class="link-js">Viçoso</a>
           </li>
         </ul>
+        <button class="menu-button">Menu</button>
       </nav>
     </header>
     <main class="main-content">
       <section class="banner-section intro-section">
         <div class="banner-container">
           <div class="banner-section-title-container">
-            <h2 class="banner-title banner-title-js">
+            <h2 class="banner-title banner-title-js" data-title>
               Conheça a família dos Jabutis.
             </h2>
             <p class="banner-para">
@@ -53,22 +60,22 @@
           <div class="img-container">
             <img src="static/img/img-04.webp" alt="Jabuti Bella" />
           </div>
-          <div class="all-attr-container">
-            <div class="all-attrs">
-              <h3 class="all-attrs-title">Ela é verde</h3>
-              <p class="all-attrs-para">
+          <div class="cards-wrapper">
+            <div class="card">
+              <h3 class="card-title">Ela é verde</h3>
+              <p class="card-para">
                 Tem algo melhor que isso? Verde como a natureza, essa é ela!
               </p>
             </div>
-            <div class="all-attrs">
-              <h3 class="all-attrs-title">Forte</h3>
-              <p class="all-attrs-para">
+            <div class="card">
+              <h3 class="card-title">Forte</h3>
+              <p class="card-para">
                 Comeu tanto mato que ficou verde. Por isso ela tem superforça.
               </p>
             </div>
-            <div class="all-attrs">
-              <h3 class="all-attrs-title">Marrenta</h3>
-              <p class="all-attrs-para">Como foi dito, ela é boa de briga.</p>
+            <div class="card">
+              <h3 class="card-title">Marrenta</h3>
+              <p class="card-para">Como foi dito, ela é boa de briga.</p>
             </div>
           </div>
         </div>
@@ -87,21 +94,21 @@
           <div class="img-container">
             <img src="static/img/img-06.webp" alt="Jabuti Viçosa" />
           </div>
-          <div class="all-attr-container">
-            <div class="all-attrs">
-              <h3 class="all-attrs-title">Uma coroa</h3>
-              <p class="all-attrs-para">Tem uns 80 anos, mas vai além!</p>
+          <div class="cards-wrapper">
+            <div class="card">
+              <h3 class="card-title">Uma coroa</h3>
+              <p class="card-para">Tem uns 80 anos, mas vai além!</p>
             </div>
-            <div class="all-attrs">
-              <h3 class="all-attrs-title">Esperta</h3>
-              <p class="all-attrs-para">
+            <div class="card">
+              <h3 class="card-title">Esperta</h3>
+              <p class="card-para">
                 Muito esperta, é claro depois de 80 anos, ele já viu quase de
                 tudo.
               </p>
             </div>
-            <div class="all-attrs">
-              <h3 class="all-attrs-title">Calma</h3>
-              <p class="all-attrs-para">
+            <div class="card">
+              <h3 class="card-title">Calma</h3>
+              <p class="card-para">
                 Não é apressada, leva tudo na tranquilidade.
               </p>
             </div>
@@ -120,22 +127,22 @@
           <div class="img-container">
             <img src="static/img/img-05.webp" alt="Jabuti Viçoso" />
           </div>
-          <div class="all-attr-container">
-            <div class="all-attrs">
-              <h3 class="all-attrs-title">Grande</h3>
-              <p class="all-attrs-para">
+          <div class="cards-wrapper">
+            <div class="card">
+              <h3 class="card-title">Grande</h3>
+              <p class="card-para">
                 Crescido, uma grande Tartaruga. Cotado como líder da família.
               </p>
             </div>
-            <div class="all-attrs">
-              <h3 class="all-attrs-title">Forte</h3>
-              <p class="all-attrs-para">
+            <div class="card">
+              <h3 class="card-title">Forte</h3>
+              <p class="card-para">
                 Assim como Bella, Viçoso é forte, só que ao triplo e além.
               </p>
             </div>
-            <div class="all-attrs">
-              <h3 class="all-attrs-title">Estrategista</h3>
-              <p class="all-attrs-para">
+            <div class="card">
+              <h3 class="card-title">Estrategista</h3>
+              <p class="card-para">
                 Viçoso é especialista em estratégia, escolhe a melhor forma de
                 pegar os alimentos primeiro.
               </p>
