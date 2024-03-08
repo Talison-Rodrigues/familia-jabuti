@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-
   --transition-time: none;
 
   /* COLORS */
@@ -106,10 +105,14 @@ a {
 
 .nav .menu {
   display: flex;
-  gap: var(--size-04);
+  gap: var(--size-02);
   .menu-item {
     font-size: var(--fs-01);
     font-weight: 500;
+    a {
+      display: block;
+      padding: var(--size-01);
+    }
   }
   @media (max-width: 860px) {
     opacity: 0;
@@ -118,12 +121,22 @@ a {
     flex-direction: column;
     background-color: var(--gray-02);
     border-radius: var(--size-00);
-    gap: var(--size-02);
+    gap: 0;
     position: absolute;
     padding: var(--size-02);
     top: 0;
     right: 0;
     transition: var(--transition-time) 200ms;
+    .menu-item {
+      a {
+        display: block;
+        padding: var(--size-01);
+        box-shadow: 0 2px 0 var(--gray-01);
+      }
+      a[href="#vicoso"] {
+        box-shadow: none;
+      }
+    }
   }
 }
 
@@ -132,10 +145,7 @@ a {
   visibility: visible;
   top: 90px;
   transform: translateY(0);
-  box-shadow: 0 
-    var(--size-00) 
-    var(--size-02) 
-  hsl(0 0% 100% / 15%);
+  box-shadow: 0 var(--size-00) var(--size-02) hsl(0 0% 100% / 15%);
 }
 
 .nav > .menu-button {
@@ -211,9 +221,9 @@ a {
     transition: transform 1s ease;
   }
   .banner-title[data-title]:after {
-    content: '';
+    content: "";
     display: inline-block;
-    width: 8px;
+    width: var(--size-01);
     height: clamp(var(--fs-04), 7vw, var(--fs-05));
     margin-left: var(--size-01);
     background-color: var(--clr-primary-500);
@@ -325,6 +335,9 @@ a {
 
 @keyframes blink {
   from {
+    opacity: 1;
+  }
+  50% {
     opacity: 0;
   }
   to {
@@ -345,8 +358,8 @@ a {
 
 @media (max-width: 860px) {
   .main-content {
-    padding-top: 86px;
-    scroll-padding-top: 86px;
+    padding-top: 85px;
+    scroll-padding-top: 85px;
   }
 
   .nav {
